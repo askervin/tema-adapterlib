@@ -499,3 +499,15 @@ class TestRunner(object):
                         break
         except IOError:
             print "Error when reading file: %s" % fileName
+
+
+    def runSingleKeyword(self, keyword):
+        """      
+        Runs given keyword.
+        
+        @type fileName: string
+        @param fileName: path to the file that contains the test
+        @return: True, False or "ERROR"
+        
+        """
+        return self.__executeKeyword(keyword)
